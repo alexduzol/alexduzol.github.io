@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Duloz</title>
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- HTML Meta Tags -->
+    <meta name="description" content="Artist">
+    <meta name="author" content="Alex Duloz">
+	
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://alexduzol.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="alexduloz">
+	<meta property="og:description" content="Artist">
+	<meta property="og:image" content="https://alexduzol.com/featured.jpg">
+	
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="alexduzol.com">
+	<meta property="twitter:url" content="https://alexduzol.com">
+	<meta name="twitter:title" content="Alex Duloz">
+	<meta name="twitter:description" content="Artist">
+	<meta name="twitter:image" content="https://alexduzol.com/featured.jpg">
+    <link href="https://alexduloz.me/normalize.min.css" rel="stylesheet">
+    <link href="https://alexduloz.me/main.css?v2" rel="stylesheet">
+    
+
+  </head>
+
+  <body><style>
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	max-width: 630px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: -10px;
+}
+
+.img-wrapper {
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.mediabox a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.mediabox {
+		position: relative;
+		display: block;
+		height: 0;
+		width: 100%;
+		/*padding-bottom: 66.6667%;*/
+	}
+
+	.mediabox-img.ls-blur-up-is-loading,
+	.mediabox-img.lazyload:not([src]) {
+		visibility: hidden;
+	}
+
+	.ls-blur-up-img,
+	.mediabox-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200px;
+		height: 200px;
+		display: block;
+
+		/* only if you want to change the blur-up option from always to auto or want to use blur up effect without a lowsrc image. */
+		font-family: "blur-up: auto", "object-fit: cover";
+
+		object-fit: cover;
+	}
+
+	.ls-blur-up-img {
+		filter: blur(10px);
+		opacity: 1;
+		transition: opacity 1000ms, filter 1500ms;
+	}
+
+	.ls-blur-up-img.ls-inview.ls-original-loaded {
+		opacity: 0;
+		filter: blur(5px);
+	}
+
+</style>
+
+<div id="loading"  style="display:none">
+	<div class="container">
+		<p style="text-align:center; margin-top: 100px;">
+			<img style="border-radius:50%" src="https://alexduzol.com/featured.png" />
+		</p>
+	</div>
+</div>
+
+<div id="loaded">
+	
+	<div style="margin-top:30px" class="center">
+		<p>Hey! I'm Alex. Here are some of my illustrations.</p>
+	</div>
+
+  
+	<ul style="text-align:center; margin-top: 30px;">
+		<li>
+      <img class="responsive" src="https://alexduzol.com/1.png" />
+    </li>
+	</ul>
+
+</div><!-- end #loaded -->
+
+<script>
+
+(function() {
+	function init() {
+		if (typeof app === "undefined") {
+			setTimeout(function() {
+				init();
+			}, 50);
+			return false;
+		}
+		//launch app
+		app();
+	}
+	init();
+})();
+
+</script>
+
+</body>
+</html>
