@@ -1,0 +1,146 @@
+html, body {
+	min-height: 100%;
+	}
+	
+body {
+	color: #444;
+	font-size: 100%;
+	font-family: 'PT Sans', sans-serif;
+	/* padding-bottom: 120px; to accomodate for the footer */
+	}
+
+.container {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: pink;
+	}
+
+a:hover {
+	text-decoration: none;
+	} 
+
+a:active, a:focus {
+	top: 1px; 
+}
+
+.logo {
+	margin-bottom: 90px;
+}
+
+.logo img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+ul.list-unstyled, ul.list-inline{
+	list-style-type: none;
+}
+
+ul.list-inline li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tagline {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+}
+
+.copyright {
+	text-transform: uppercase;	
+	text-align: center;
+	color: #aaa;
+	font-size: 14px;
+}
+
+.privacy-policy ul {
+	list-style-type: decimals;
+}
+
+.privacy-policy li {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.center {
+	text-align:center;
+}
+
+.header {
+	margin-top: 0;
+}
+
+.title {
+	position: relative;
+	top: -60px;
+}
+
+.main {
+	margin-top: 90px;
+}
+
+.footer {
+	/*position: fixed;*/
+	margin-top: 120px;
+	/*background: #fafafa;*/
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+	width: 100%;
+}
+
+ul.list-footer {
+	list-style-type: none;
+}
+
+ul.list-footer li {
+	display: block;
+	margin: 10px;
+}
+
+/* A LA SHOPGRID */
+ul.shopgrid {
+	position: relative;
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+ul.shopgrid li {
+	display: inline-block;
+	width: 229px;
+	height: 229px;
+	margin: 3px;
+}
+
+ul.shopgrid img {
+	display: inline-block;
+	width: 227px;
+	height: 227px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	ul.shopgrid {
+		text-align: center;
+	}
+}
