@@ -17,8 +17,8 @@ body {
 
 a {
 	position: relative;
-	text-decoration: none;
-	color: pink;
+	text-decoration: underline;
+	color: #444;
 	}
 
 a:hover {
